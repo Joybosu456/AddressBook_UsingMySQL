@@ -11,7 +11,7 @@ LastName varchar(200),
 Address varchar(300),
 City varchar(50),
 PinCode int,
-PhoneNumber int,
+PhoneNumber float,
 Email varchar(50)
 )
 
@@ -20,10 +20,10 @@ Email varchar(50)
 
 select * from Address_Book_Service
 
-Insert into Address_Book_Service values('Joy','Bosu','Gangnapur,Nadia','Ranaghat','741238','629658205','paromeshdasuf6@gmail.com')
-Insert into Address_Book_Service values('Nirav','Pandit','Ashanshol','AshanShol','741238','629658204','niravybosu456@gmail.com')
+Insert into Address_Book_Service values('Joy','Bosu','Gangnapur,Nadia','Ranaghat','741238','6296582005','paromeshdasuf6@gmail.com')
+Insert into Address_Book_Service values('Nirav','Pandit','Ashanshol','AshanShol','741238','6296582004','niravybosu456@gmail.com')
 
-#UC-3 Insert new Contact.
+#UC-3 Inserte new Contact.
  
 Insert into Address_Book_Service values('Paromesh','shadukha','Gangnapur,Nadia','Ranaghat','741238','785580205','joybosu456@gmail.com')
 Insert into Address_Book_Service values('Sourav','Das','gangnapur','AshanShol','741238','629658254','souravnosu456@gmail.com')
@@ -52,3 +52,13 @@ UC-8 Name sorted alphabeticaly order
 
 select * from Address_Book_Service 
 order by FirstName desc
+
+Alter table Address_Book_Service 
+drop column PhoneNumber
+
+Alter table Address_Book_Service 
+add PhoneNumber float
+
+drop table Address_Book_Service
+
+
